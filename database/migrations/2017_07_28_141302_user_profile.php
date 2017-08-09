@@ -17,7 +17,7 @@ class UserProfile extends Migration
 		Schema::create('user_profiles', function (Blueprint $table) {
 		$table->increments('id');
 		$table->integer('user_id');
-		$table->float('balance')->nullable();
+		$table->float('balance', 18,2)->nullable();
 		$table->string('name');
 		$table->string('firstname');
 		$table->string('lastname');
